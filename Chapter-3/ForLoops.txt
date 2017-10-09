@@ -5,7 +5,7 @@ System.out.println("Hello”); // executed inside loop.
 System.out.println("Kamel”);// executed after loop.
 
 
-E2ample-1
+Example-2
 for (int i = 1; i <= 3; i++){
 for(int j = 1; j <= 3 ; j++)
 System.out.println("The i = " + i + " The j = " + j);
