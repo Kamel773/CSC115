@@ -1,18 +1,18 @@
 public class LinkedlistTwoItem {
  private Node first;
-  private int count;
-  private Node last;
+ private int count;
+ private Node last;
 
-	public LinkedlistTwoItem() {
-		first = null;
+ public LinkedlistTwoItem() {
+     first = null;
     //last = null;
-		count = 0;
+     count = 0;
 }
 
 public void prepend(String name, int gpa) {
     first = new Node(name,gpa,first);
     count++;
-		if (count == 1) {
+    if (count == 1) {
        last = first;
 }
 }
@@ -27,20 +27,20 @@ public boolean isEmpty(){
 
 public void check(){
 
-	//System.out.println(first.item);
-	//System.out.println(last.next);
-  //System.out.println(first.next.next.item);
-  //System.out.println(first.next.next.next.item);
+//System.out.println(first.item);
+//System.out.println(last.next);
+//System.out.println(first.next.next.item);
+//System.out.println(first.next.next.next.item);
 //  first = first.next;
-	//System.out.println(last.item);
-	//System.out.println(last.next);
-  //last.next = first;
-  //last = first.next;
+//System.out.println(last.item);
+//System.out.println(last.next);
+//last.next = first;
+//last = first.next;
 //  Node traveller;
-  //for (traveller = first; traveller != null; traveller = traveller.next){
-  //  System.out.println("Node = " + traveller.item);
-  //}
-  //System.out.println(traveller.next);
+//for (traveller = first; traveller != null; traveller = traveller.next){
+//  System.out.println("Node = " + traveller.item);
+//}
+//System.out.println(traveller.next);
   Node traveller = first;
   while(traveller != null){
     System.out.println("Name is " + traveller.Name + " and GPA is " + traveller.GPA);
@@ -58,7 +58,7 @@ public void append(String name ,int gpa) {
     last.next = tmp;
     last = tmp;
     count++;
-		tmp = null;
+    tmp = null;
 }
 
 
@@ -69,18 +69,18 @@ for (Node traveller = first; traveller != null; traveller = traveller.next) {
                 //this will invoke the String’s toString method!!
     sb.append("\n\t"+"Name is " + traveller.Name + " and GPA is " + traveller.GPA);
 }
-             return sb.toString();
+    return sb.toString();
 }
 
 
 
-	public static void main(String[] args) {
-		LinkedlistTwoItem obj = new LinkedlistTwoItem();
-		obj.prepend("Kamel",10);
-		obj.prepend("Daniel",7);
-	  obj.append("Ali",3);
-    System.out.println(obj);
-//  obj.check();
+public static void main(String[] args) {
+	LinkedlistTwoItem obj = new LinkedlistTwoItem();
+	obj.prepend("Kamel",10);
+	obj.prepend("Daniel",7);
+	obj.append("Ali",3);
+        System.out.println(obj);
+    //  obj.check();
 
   }
 }
